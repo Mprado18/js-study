@@ -4,7 +4,7 @@ Este repositório tem como objetivo disponibilizar um roteiro de estudo pessoal,
 
 *Este roteiro foi a minha forma pessoal que encontrei de estudar o tema, caso seja útil para mais alguém ficarei feliz em contribuir com o conhecimento.*
 
-*Roteiro está aberto a sugestões de artigos, livros e demais informações úteis que podem agregar com os estudos de mais pessoas no futuro, fiquem a vontade para editar.*  :tw-1f609:
+*Roteiro está aberto a sugestões de artigos, livros e demais informações úteis que podem agregar com os estudos de mais pessoas no futuro, fiquem a vontade para editar.*  :smile:
 
 ## Links úteis:
 - [**Codewars**](https://www.codewars.com/users/sign_in "**Codewars**") - Site para realização de desafios em diversas linguagens;
