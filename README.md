@@ -70,10 +70,10 @@ Este repositório tem como objetivo disponibilizar um roteiro de estudo pessoal,
     `1 == 1 //true` - ok 1 é igual a 1.
     `2 == 1 //false` - ok 2 é maior que 1, então não é igual.
     `"a" == 1 //false` - ok, uma string não é igual a um number.
-    `"1" == 1 //true` - n/ok, aqui está o problema, pois se compararmos 1 number e 1 string ele acusa que são iguais, isos pode comprometer o código, nesse caso é aconselhável utilizar o operador ===.
+    `"1" == 1 //true` - n/ok, aqui está o problema, pois se compararmos 1 number e 1 string ele acusa que são iguais, isso pode comprometer o código, nesse caso é aconselhável utilizar o operador ===.
 ```
 
-`=== //irá comparar se o vlaor e o tipo de dado são iguais` - Alguns exemplos corrigindo a falha da comparação acima:
+`=== //irá comparar se o valor e o tipo de dado são iguais` - Alguns exemplos corrigindo a falha da comparação acima:
 
 ```javascript
 `1 === 1 //true` - ok number é igual a number.
