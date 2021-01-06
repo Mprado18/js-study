@@ -8,6 +8,8 @@
     5 / 3 //executa uma divisão simples;
     20 % 2 //operador mod cálcula o resto de um valor.
 ```
+*Uma observação que o + se for utilizado com String irá realizar uma concatenação, será abordado em outros tópicos mais exemplos práticos*
+
 - Operadores lógicos de comparação:
 
 ```javascript
@@ -75,4 +77,27 @@
 !(10 === 10) //false - ok a comparação seria true por se tratar de dois numbers, mas temos o NOT;
 !true //false - ok true vira false devido NOT;
 !false //true - ok false vira true devido NOT.
+```
+
+- Operadores ternários:
+É utilizado para realizar comparações em apenas uma linha.
+> Eu particularmente não curti utilizar este operador, acredito que acaba confundindo muito o entendimento do código, pois no meu caso estou mais adaptado com IF.
+
+*Esse operador segue bastante a lógica do IF/Else.*
+
+`"Primeira comparação"? "Condição se não" : "Resultado"` - Alguns exmeplos abaixo para ficar mais claro:
+
+```javascript
+10 > 100 ? 'É maior' : 'Não é maior' //"Não é maior"
+"Teste" === "Teste" ? "É igual" : "Não é igual" //"É igual"
+```
+
+#### Conversão automática de dados (possível problema a ser evitado)
+Muitas vezes o JS acaba convertendo de forma automática os dados, e isso pode ser um grande problema em nosso código até que localizemos.
+
+Exemplos de conversão:
+```javascript
+(5 * null) //0 - n/ok o segundo valor não foi declarado então não deveria ter sido executado está multiplicação;
+("25" - 10) //15 n/ok o primeiro valor é uma String, então o JS não deveria ter realizado essa subtração;
+("10" + "10") //"1010" - n/ok se o intuito era somar os dois valores não deveriam ser declarados como String, pois o que ocorreu foi a concetenação dos mesmos, quando utilizado + entre String os textos irão se juntar tornando-se um apenas.
 ```
