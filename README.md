@@ -11,13 +11,16 @@ Este repositório tem como objetivo disponibilizar um roteiro de estudo pessoal,
 - [**Editor online de Markdown Pandao**](https://pandao.github.io/editor.md/en.html "**Editor online de Markdown Pandao**") - Permite o desenvolvimento de arquivos Markdown em tempo real, com diversas ferramentas de fácil aplicação
 - Documentação Mozilla - [**MDN Web Docs**](https://developer.mozilla.org/pt-BR/ "MDN Web Docs") (Português/Inglês)
 - Documentação de várias linguagens e biblitecas - [**W3Schools**](https://www.w3schools.com "**W3Schools**") (Inglês)
+- Livro traduzido PT-BR JavaScript Eloquente 2ª edição - [**Livro JavaScript Eloquente**](https://github.com/braziljs/eloquente-javascript "Livro JavaScript Eloquente")
 
 ## TÓPICOS
 1. [Tipos de dados][1]
 1. [Operadores JS][2]
 1. [Estruturas de programação][3]
+1. [Funções][4]
 
 
 [1]: https://github.com/Mprado18/js-study/blob/main/topicos/tipos-dados.MD "1. Tipos de dados"
 [2]: https://github.com/Mprado18/js-study/blob/main/topicos/operadores-js.MD "2. Operadores JS"
 [3]: https://github.com/Mprado18/js-study/blob/main/topicos/estrutura-programacao.MD "Estruturas de programação"
+[4]: https://github.com/Mprado18/js-study/blob/main/topicos/funcoes.MD "Funções"
