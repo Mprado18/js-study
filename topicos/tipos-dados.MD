@@ -5,6 +5,32 @@
 
 `"1234"` - Se números estiverem dentro de aspas, serão declarados como String.
 
+`Hello World`  - Template Literals , é uma forma de concatenas strings e variáveis de forma linear, sem ter o uso do +.
+
+Exemplo concatenando com template literals e com operador +.
+```javascript
+let nome = "Marcos"
+`Olá ${nome}, tudo bem?` //Olá Marcos tudo bem?
+`A soma de 5 + 10 é {5+10}` //A soma de 5 + 10 é 15
+"Olá " + nome + " tudo bem?" //Olá Marcos tudo bem?
+```
+
+E se por acaso precisarmos colocar aspas dentro de uma String, visto que para ser String devemos utilizar aspas?
+
+Exemplo:
+`"Utilizando 'aspas' dentro de string"`
+ou
+`'Utilizando "aspas" dentro de string'`
+
+É possível pular linhas dentro de String também, utilizando \n
+
+Exemplo:
+```javascript
+"Primeira linha \nSegunda linha" //retorno ficaria conforme abaixo:
+Primeira linha
+Segunda linha
+```
+
 - **Number**, números poderão seguir de forma inteira, binária, decimal e até mesmo negativa, para isso não poderá constar dentro de aspas duplas ou simples:
 
 `123` - Inteiro

@@ -8,7 +8,7 @@
     5 / 3 //executa uma divisão simples;
     20 % 2 //operador mod cálcula o resto de um valor.
 ```
-*Uma observação que o + se for utilizado com String irá realizar uma concatenação, será abordado em outros tópicos mais exemplos práticos*
+*Uma observação que o + se for utilizado com String irá realizar uma concatenação, tema abordado no tópico [Tipos de dados][1].*
 
 - Operadores lógicos de comparação:
 
@@ -101,3 +101,4 @@ Exemplos de conversão:
 ("25" - 10) //15 n/ok o primeiro valor é uma String, então o JS não deveria ter realizado essa subtração;
 ("10" + "10") //"1010" - n/ok se o intuito era somar os dois valores não deveriam ser declarados como String, pois o que ocorreu foi a concetenação dos mesmos, quando utilizado + entre String os textos irão se juntar tornando-se um apenas.
 ```
+[1]: https://github.com/Mprado18/js-study/blob/main/topicos/tipos-dados.MD "Tipos de dados"

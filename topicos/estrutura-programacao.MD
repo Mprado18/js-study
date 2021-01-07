@@ -100,4 +100,5 @@ Estas são algumas das palavras que não podemos utilizar de forma direta para n
 ```javascript
 let public //irá retornar erro
 let publicTest //irá permitir devido não ser usado de forma direta
+const functionTest ////irá permitir devido não ser usado de forma direta
 ```
