@@ -18,9 +18,11 @@ Este repositório tem como objetivo disponibilizar um roteiro de estudo pessoal,
 1. [Operadores JS][2]
 1. [Estruturas de programação][3]
 1. [Funções][4]
+1. [Estruturas de controle][5]
 
 
 [1]: https://github.com/Mprado18/js-study/blob/main/topicos/tipos-dados.MD "1. Tipos de dados"
 [2]: https://github.com/Mprado18/js-study/blob/main/topicos/operadores-js.MD "2. Operadores JS"
 [3]: https://github.com/Mprado18/js-study/blob/main/topicos/estrutura-programacao.MD "Estruturas de programação"
 [4]: https://github.com/Mprado18/js-study/blob/main/topicos/funcoes.MD "Funções"
+[5]: https://github.com/Mprado18/js-study/blob/main/topicos/estruturas-controle.MD "Estruturas de controle"
