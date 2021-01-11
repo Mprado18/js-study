@@ -76,3 +76,59 @@ let nome = Marcos;
 console.log(`Olá ${nome}, seu template literals está funcionando!`) // Olá Marcos, seu templeta literals está funcionando!
 ```
 
+- **Mais sobre funções:**
+
+Funções são estruturas de códigos menores que podem ser reaproveitáveis em qualquer parte do programa.
+As funções tem como principal objetivo poupar a repetições de código, deixando o código muitas vezes enorme e de dificil entendimento.
+
+As funções devem ser chamadas pelo seu nome + abrindo e fechando parênteses:
+`funçãoTeste()`
+
+É possível inserir parametros dentro de funções, o que pode servir para criar regras dentro da mesma e poderem alterar o resultado:
+`funçãoSoma(x,y)`
+
+*É possível declarar uma função dentro de uma variável, muitas vezes essa função não tem nome, se tornando uma função anônima para aquela variável.*
+
+Como declarar uma função:
+```javascript
+function imprimirNoConsole(){
+	console.log("Hello World!");
+}
+
+imprimirNoConsole(); //após criar a função, devemos chama-lá para que seja executada.
+```
+
+Exemplo de função com parâmetro:
+```javascript
+const soma = function(a,b){
+	return a + b; //irá retornar a soma dos números que foram declarados nos parêmetros a e b;
+} 
+
+soma(10,20); //irá retornar a soma de 10 + 20 = 30.
+```
+
+```javascript
+const saudacao = function(nome){
+	if(nome === "Marcos"){
+		return "Olá Marcos, seja bem vindo!";
+	}
+}
+
+saudacao("Marcos");
+```
+
+Uma função tem seu próprio escopo, caso tenha uma variável com nome x no escopo global (fora do escopo da função, arquivo total JavaScript) e seja declarado uma variável com nome x dentro da função seu valor será diferente e o que valerá para função é a que está dentro do seu escopo.
+
+Exemplo:
+```javascript
+let n = 10;
+
+function imprimir(){
+	let n = 20;
+	console.log(n);// irá imprimir o valor de n que consta declarado dentro do escopo da função;
+}
+
+imprimir();
+
+console.log(n); //irá imprimir o valor de n que consta declarado no escopo global.
+```
