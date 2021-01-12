@@ -273,6 +273,8 @@ meuContador(); //irá incrementar o valor inicial de i, lembrando assim que o pr
 meuContador(); //irá incrementar o valor inicial de i, lembrando assim que o primeiro foi o 5;
 ```
 
+Mais sobre closure: **[MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures "MDN")**
+
 O recursion permite que chamemos uma função diversas vezes para se chegar a um objetivo.
 
 Exemplo:
@@ -293,4 +295,4 @@ recursao(39); //a função irá sendo chamada diversas vezes até que entre na p
 ```
 > Para esses casos é preferível o uso de um loop, pois o entendimento do código poderá ficar melhor.
 
-Mais sobre closure: **[MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures "MDN")**
+Mais sobre recursion: **[MDN](https://developer.mozilla.org/pt-BR/docs/Glossario/Recursão "MDN")**
