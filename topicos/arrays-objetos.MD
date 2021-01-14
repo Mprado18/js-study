@@ -65,6 +65,99 @@ let marca = "sony";
 console.log(marca.toUpperCase()); //irá imprimir o valor de marca todo em maiúsculo, SONY;
 ```
 
+Alguns métodos de arrays que tive mais contato e exemplos práticos:
+
+`variável.pop()` -  irá remover um elemento no final de um array;
+`variável.push()` - irá inserir um elemento no final de um array;
+
+```javascript
+let nomes = ["Marcos", "Angie", "Winky"]
+
+nomes.pop("Winky") //nome Winky foi removido do array
+nomes //se analisarmos o array irá conter apenas (2) ["Marcos", "Angie"]
+nomes.push("Winky") //nome Winky foi incluída no array
+nomes //se analisarmos o array irá conter (3) ["Marcos", "Angie", "Winky"]
+```
+
+`variável.shift()` - irá remover um elemento no inicio de um array;
+`variável.unshift()` - irá inserir um elemento no inicio de um array;
+
+```javascript
+let nomes = ["Marcos", "Angie", "Winky"]
+
+nomes.shift("Marcos") //irá remover o nome Marcos do Array
+nomes //se analisarmos o array irá conter apenas (2) ["Angie", "Winky"]
+nomes.unshift("Marcos") //irá incluir o nome Marcos no array
+nomes //se analisarmos o array irá conter (3) ["Marcos", "Angie", "Winky"]
+```
+
+`variável.indexOf()` - irá encontrar um índice de um determinado elemento;
+`variável.lastIndexOf()` - irá encontrar o último índice de um determinado elemento;
+
+```javascript
+let nums = [1,3,4,7,8,3]
+
+nums.indexOf(3) //irá retornar o índice do valor 3 no array que é = 1
+nums.lastIndexOf(3) //irá retornar o ínidce do valor 3 no array que é 5, caso só tenha um elemento, irá encontrar o único índice.
+```
+
+`variável.slice()` - irá retornar um array de outro array, para isso definimos os parâmetros de inicio e fim para o slice retornar o novo array;
+
+```javascript
+let array = [2,"Teste", "PS4", 18, "Final"]
+
+array.slice(2) //irá retornar um array a partir do índice 2 ["PS4", 18, "Final"]
+array.slice(2,4) //irá retornar um array a partir do índice 2 e antes do índice 4 ["PS4", 18]
+array.slice(2,3) //irá retornar um array a partir do índice 2 e antes do índice  3 ["PS4"]
+array.slice(-2) //irá retornar um array considerando o inicio do final [18, "Final"]
+array.slice(0,-2) //irá retornar um array a partir do índice 0 e antes dos dois últimos índices [2, "Teste", "PS4"]
+```
+
+> Aqui cabe uma observação, pois o segundo parâmetro do slice irá pegar o valor definido -1.
+
+`variável.forEach(parâmetro => {condição})` - irá executar uma função a cada elemento de um array;
+
+```javascript
+let nomes = ['Marcos', 'Angela', 'Erlete', 'Winky'];
+
+nomes.forEach(nome =>{
+    if(nome.length > 5){
+    	console.log("O nome é " + nome);
+	} else{
+        console.log("O nome não atingiu a qtd mínima de caracteres")
+    }
+});
+```
+> Um dica que gosto de usar é usar a variável do array no plural e o parâmetro no singular para não confundir.
+
+`variável.includes()` - irá verificar se um array tem um determinado elemento;
+
+```javascript
+let carros = ["Fiat", "BMW", "Chevy", "Ferrari"]
+
+carros.includes("Chevy") //caso o elemento analisado esteja no array irá retorna true
+carros.includes("Ford") //caso o elemento analisado não esteja no array irá retorna false
+```
+
+`variável.reverse()` - irá reverter qualquer array, nos trazendo um novo array ao contrário;
+
+```javascript
+let numeros = [0,1,2,3,4,5,6,7,8,9,10]
+
+`numeros.reverse()` //irá trazer um novo array reverso [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+```
+
+`variável.concat()` -irá concatenar dois ou mais arrays, retornando um array novo;
+
+```javascript
+let arr1 = [1,2,3]
+let arr2 = ["Teste"]
+
+arr1.concat(arr2) //irá concatenar no array definido e um outro o tornando um novo array [1, 2, 3, "Teste"]
+```
+
+Mais métodos e exemplos de como aplica-los podem ser encontrando em: [**W3Schools**](https://www.w3schools.com/jsref/jsref_obj_array.asp "W3Schools")
+
 - **Objetos:**
 
 Os objetos são uma coleção de propriedades que nós podemos criar que armazenam valores como se fossem arrays.
