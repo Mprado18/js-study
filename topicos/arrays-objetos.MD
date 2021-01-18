@@ -165,6 +165,11 @@ arr.toString() //irá transformar todo o array em uma string "Marcos,25,Angie,26
 
 Mais métodos de arrays e exemplos de como aplica-los podem ser encontrando em: [**W3Schools**](https://www.w3schools.com/jsref/jsref_obj_array.asp "W3Schools")
 
+#### Métodos em Strings
+
+Assim como nos arrays, as String possuem métodos e propriedades também.
+Sua forma de ser chamada é a mesma que em um array, porém temos alguns métodos diferentes e até mesmo alguns iguais que na prática executam a mesma função.
+
 Alguns métodos de string que tive mais contato:
 
 `string.trim()` - irá remover todos os espaços em branco de uma string, inclui espaços por linhas puladas;
@@ -257,6 +262,22 @@ nomeCompleto.toLowerCase() //"marcos paulo rocha do prado"
 ```
 
 Mais métodos de strings e exemplos de como aplica-los podem ser encontrando em: [**W3Schools**](https://www.w3schools.com/jsref/jsref_obj_string.asp "W3Schools")
+
+- **Destructuring com Arrays:**
+
+Este é um recurso que veio com a versão ES6 do JS, possibilitando transformar variáveis/constantes com os valores de um array de forma mais limpa apenas em poucas linhas.
+
+Exemplo:
+```javascript
+let numeros = [2,4,5,7];
+
+let [num, num2, num3, num4] = numeros; //definimos as variáveis na ordem do array
+
+console.log(num); // 2
+console.log(num2); // 4
+console.log(num3); // 5
+console.log(num4); // 7
+```
 
 - **Objetos:**
 
@@ -368,4 +389,25 @@ pessoa == pessoa3 //irá imprimir false, mesmo as propriedades sendo iguais, nã
 
 pessoa2.nome = "Prado";
 console.log(pessoa.nome); //como os objetos estão referenciados, caso seja alterado alguma propriedade em um, afetará em todas suas referências.
+```
+
+- **Destructuring com Objetos**:
+
+Este é um recurso que veio com a versão ES6 do JS, possibilitando transformar propriedades em variáveis/constantes de forma mais limpa apenas em poucas linhas.
+
+Exemplos:
+```javascript
+let obj = {
+    rodas: 4,
+    portas: 4,
+    tetoSolar: true,
+    motor: "2.0"
+} //criamos o objeto e suas propriedades;
+
+const {rodas: vRodas, portas: vPortas, tetoSolar: vTetoSolar, motor: vMotor} = obj; //igualamos uma propriedade a uma variável/constante;
+
+console.log(vRodas); // 4
+console.log(vPortas); // 4
+console.log(vTetoSolar); // true
+console.log(vMotor); // 2.0
 ```
