@@ -147,7 +147,7 @@ let numeros = [0,1,2,3,4,5,6,7,8,9,10]
 `numeros.reverse()` //irá trazer um novo array reverso [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 ```
 
-`variável.concat()` -irá concatenar dois ou mais arrays, retornando um array novo;
+`variável.concat()` - irá concatenar dois ou mais arrays, retornando um array novo;
 
 ```javascript
 let arr1 = [1,2,3]
@@ -156,7 +156,107 @@ let arr2 = ["Teste"]
 arr1.concat(arr2) //irá concatenar no array definido e um outro o tornando um novo array [1, 2, 3, "Teste"]
 ```
 
-Mais métodos e exemplos de como aplica-los podem ser encontrando em: [**W3Schools**](https://www.w3schools.com/jsref/jsref_obj_array.asp "W3Schools")
+`variável.toString` - irá converter um array em uma string;
+```javascript
+let arr = ["Marcos", 25, "Angie", 26]
+
+arr.toString() //irá transformar todo o array em uma string "Marcos,25,Angie,26"
+```
+
+Mais métodos de arrays e exemplos de como aplica-los podem ser encontrando em: [**W3Schools**](https://www.w3schools.com/jsref/jsref_obj_array.asp "W3Schools")
+
+Alguns métodos de string que tive mais contato:
+
+`string.trim()` - irá remover todos os espaços em branco de uma string, inclui espaços por linhas puladas;
+```javascript
+let nome = "     Marcos  "
+
+nome //"     Marcos  "
+let nomeAjustado = nome.trim()
+
+nomeAjustado //irá remover os espaços e quebras de linhas, deixando a string padrão"Marcos"
+```
+
+> Podemos evitar isso com expressões regulares também, deixando padronizado já antes do usuário ter a possibilidade de inserir de forma incorreta.
+
+`string.padStart()` - irá padronizar a string de acordo com a regra aplicada;
+```javascript
+let id = "23"
+
+id.padStart(6,0) //irá retornar um resultado de acordo com as regras definidas "000023"
+
+let id2 = "2345"
+
+id2.padStart(6,0) //"002345"
+```
+
+`string.split()` - irá separar uma string, transformando-a em um array de acordo com o argumento definido;
+```javascript
+let texto = "1 2 3 4 5 6 7 8"
+
+texto.split(" ") //irá retornar um array (8) ["1", "2", "3", "4", "5", "6", "7", "8"]
+
+let produtos = "Banana;Bola;Carro;Tv;PS4"
+let produtosArray = produtos.split(";") //podemos definir o split dentro de uma nova variável específica como array
+
+produtosArray //(5) ["Banana", "Bola", "Carro", "Tv", "PS4"]
+```
+
+`string.join()` - irá fazer um processo inverso ao split, pegará um array e irá transformar em uma string com um novo separador definido;
+```javascript
+let arr = ["Testando","este","texto"]
+
+arr.join(" - ") //irá pegar um array e o transformará em string, de acordo com o separador definido "Testando - este - texto"
+```
+
+`string.repeat()` - irá repetir a string de acordo com a quantidade de vezes definida;
+```javascript
+let repertir = "Vou me repetir "
+
+repetir.repeat(3) //irá repetir conforme a qtd declarada "Vou me repetirVou me repetirVou me repetir"
+```
+
+`string.concat()` - irá concatenar duas ou mais string, tornando uma nova string;
+```javascript
+let texto = "Amigo estou "
+
+let texto2 = "aqui"
+
+texto.concat(texto2) //irá concatenar uma string em outra definida, basicamente criando uma nova ou ajustando um atual "Amigo estou aqui"
+```
+
+`string.includes()` - irá verificar se uma string contém uma string/caracteres especificos;
+```javascript
+let textaoAleatorio = "Este texto @ é aleatório, apenas para @ teste do método"
+
+textaoAleatorio.includes("@") //true
+//irá retornar um boolen caso o valor esteja incluído na string 
+```
+
+`string.replace()` - irá checar uma string por um valor e substitui aquele valor por um novo na string;
+```javascript
+let str = "Meu nome é Marcos"
+
+str.replace("Marcos","Prado") //irá substituir um valor de acordo com outro da string "Meu nome é Prado"
+```
+
+`string.slice()` - irá extrair uma parte de uma string, retornando uma nova string;
+```javascript
+let saudacao = "Hello Word"
+
+saudacao.slice(6) //"Word"
+```
+
+> Funciona da mesma forma que o slice em arrays
+
+`string.toUpperCase()` - irá converter toda string em letras maiúsculas;
+`string.toLowerCase()` - irá converter toda string em letras minúsculas;
+```javascript
+nomeCompleto.toUpperCase() //"MARCOS PAULO ROCHA DO PRADO"
+nomeCompleto.toLowerCase() //"marcos paulo rocha do prado"
+```
+
+Mais métodos de strings e exemplos de como aplica-los podem ser encontrando em: [**W3Schools**](https://www.w3schools.com/jsref/jsref_obj_string.asp "W3Schools")
 
 - **Objetos:**
 
