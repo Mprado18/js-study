@@ -296,3 +296,31 @@ recursao(39); //a função irá sendo chamada diversas vezes até que entre na p
 > Para esses casos é preferível o uso de um loop, pois o entendimento do código poderá ficar melhor.
 
 Mais sobre recursion: **[MDN](https://developer.mozilla.org/pt-BR/docs/Glossario/Recursão "MDN")**
+
+- **Rest operator**:
+
+O rest operator é uma forma que temos de que uma função receba indefinidos parâmetros.
+Seu parâmetro irá virar um array e sua forma de definição é:
+
+`function(...args){}`
+`function(...nome){}`
+
+Exemplo:
+```javascript
+let num = 1;
+let num1 = 5;
+let num2 = 3;
+let num3 = 4;
+
+function imprimirNumero(...nums){
+    for(let i = 0; i < nums.length; i++){
+        console.log(nums[i]);
+    }
+}
+
+imprimirNumero(num,num1,num2);
+console.log('pausa');
+imprimirNumero(num2,num3);
+console.log('pausa');
+imprimirNumero(1,2,3,4,6,7,87,3,2,5,467,4,2); //está aceitando diversos parâmetros ao mesmo tempo.
+```
