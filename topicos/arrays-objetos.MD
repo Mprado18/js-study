@@ -6,13 +6,16 @@ Os arrays são conjunto de valores que podemos declarar em variáveis.
 Devem ser escritos dentro de [] e separados por vígulas, não possui restrição com tipos de dados.
 
 `let array [1,2,3,4,5]`
+
 `let array2 [1, "banana", 2, "laranja"]`
 
 Não há necessidade de colocar espaços entre as vírgulas, porém fica melhor vísivel o código.
 
 Os arrays podem ser acessados pelo nome da variável e pelos seus índices, sua contagem começa sempre com 0, sendo este o primeiro.
 
-Exemplo, quero pegar o item dois do array2 acima, seria desta forma: `array2[1]` - //irá imprimir "banana".
+Exemplo, quero pegar o item dois do array2 acima, seria desta forma:
+
+`array2[1]` - //irá imprimir "banana".
 
 Como uma array possui muitas informações, é possível realizarmos um loop do mesmo, criando condições para tirarmos um item específico em caso de necessidade.
 
@@ -33,7 +36,9 @@ As propriedades são informações que podemos acessar de quase todos os valores
 Apenas null e undefined não possuem propriedades.
 
 É possível acessar de duas formas:
+
 `valor.nome da propriedade`
+
 `valor['nome da propiedade']`
 
 Exemplos:
@@ -68,6 +73,7 @@ console.log(marca.toUpperCase()); //irá imprimir o valor de marca todo em maiú
 Alguns métodos de arrays que tive mais contato e exemplos práticos:
 
 `variável.pop()` -  irá remover um elemento no final de um array;
+
 `variável.push()` - irá inserir um elemento no final de um array;
 
 ```javascript
@@ -80,6 +86,7 @@ nomes //se analisarmos o array irá conter (3) ["Marcos", "Angie", "Winky"]
 ```
 
 `variável.shift()` - irá remover um elemento no inicio de um array;
+
 `variável.unshift()` - irá inserir um elemento no inicio de um array;
 
 ```javascript
@@ -92,6 +99,7 @@ nomes //se analisarmos o array irá conter (3) ["Marcos", "Angie", "Winky"]
 ```
 
 `variável.indexOf()` - irá encontrar um índice de um determinado elemento;
+
 `variável.lastIndexOf()` - irá encontrar o último índice de um determinado elemento;
 
 ```javascript
@@ -255,6 +263,7 @@ saudacao.slice(6) //"Word"
 > Funciona da mesma forma que o slice em arrays
 
 `string.toUpperCase()` - irá converter toda string em letras maiúsculas;
+
 `string.toLowerCase()` - irá converter toda string em letras minúsculas;
 ```javascript
 nomeCompleto.toUpperCase() //"MARCOS PAULO ROCHA DO PRADO"

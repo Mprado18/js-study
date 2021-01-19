@@ -33,15 +33,25 @@ let msg = alert("Não esqueça de realizar login")
 Alguns dos métodos Math que mais tive contato até o momento:
 
 `Math.abs(x)` - retorna o valor absoluto de x (positivo);
+
 `Math.ceil(x)` - irá sempre arredondar o valor de x para cima;
+
 `Math.floor(x)` - irá sempre arredondar o valor de x para baixo;
+
 `Math.max(x, y, z, ..., n)` - irá retornar o maior valor entre todos definidos;
+
 `Math.min(x, y, z, ..., n)` -  irá retornar o menor valor entre todos os definidos;
+
 `Math.pow(x, y)` - irá retornar o valor de x a potência de y;
+
 `Math.random()` - irá retornar um valor aletatório entre 0 e 1;
+
 `Math.round(x)` - irá arredondar x para o número inteiro mais próximo (segue a lógica matemática do 5);
+
 `Math.sign(x)` - irá retornar o o sinal de um número, validando se é positivo, negativo ou zero;
+
 `Math.sqtr(x)` - irá retornar a raiz quadrada de x;
+
 `Math.trunc(x)` - irá retornar a parte inteira de x.
 
 Alguns exemplos na prática:
@@ -303,6 +313,7 @@ O rest operator é uma forma que temos de que uma função receba indefinidos pa
 Seu parâmetro irá virar um array e sua forma de definição é:
 
 `function(...args){}`
+
 `function(...nome){}`
 
 Exemplo:
