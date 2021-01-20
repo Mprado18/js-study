@@ -149,3 +149,178 @@ Esses caracteres especiais nos permitem realizar verificações de várias forma
 Isso limita a possibilidade de o usuário passar valores incorretos que possam prejudicar no Back End e Banco de Dados.
 
 - **Operadores regex:**
+
+Com os operadores temos a possibilidade de aplicar validações mais elaboradas em nossas regex.
+
+`^` - operador NOT, irá realizar uma negação em certa condição da regex;
+```javascript
+const notAB = /[^ab]/
+
+notAB.test("ab") //false
+notAB.test("abraço") //retorna true devido ter mais caracteres
+notAB.test("AB") //retorna true devido a validação ser apenas para letras minúsculas
+notAB.test("ab1") //retorna true devido ter número na string
+notAB.test("a") //false
+notAB.test("b") //false
+```
+
+```javascript
+const notToAZ = /[^a-z]/
+
+notToAZ.test("teste") //false
+notToAZ.test("teste1") //retorna true devido ter número na string
+notToAZ.test("az") //false
+notToAZ.test("TESTE") //retorna true devido a validação ser apenas para letras minúsculas
+notToAZ.test(" ") //retorna true devido estar apenas com espaço e a validação era para letras a-z
+```
+
+> Devemos apenas ter atenção nesse caso, pois se combinarmos valores diferentes ao que está sendo negado, a validação irá falhar
+
+`+` - operador plus, irá permitir que um elemento possa se repetir diversas vezes;
+```javascript
+const variosDigitos = /\d+/
+
+variosDigitos.test("14389453975897528965739") //true
+variosDigitos.test(" ") //retorna false devido validação ser apenas para números
+variosDigitos.test("testando") //retorna false devido validação ser apenas para números
+variosDigitos.test("testando1234") //retorna true devido ter combinação de letras e números
+variosDigitos.test("") //false
+```
+
+> Devemos apenas ter atenção nesse caso, pois se combinarmos valores diferentes ao que está sendo negado, a validação irá falhar
+
+`?` - operador question, faz com que uma parte da validação seja opcional;
+```javascript
+const opc = /teste?/
+
+opc.test("teste") //retorna true devido a validação inicial test ter sido atendida e o último "e" ser opcional
+opc.test("test") //retorna true devido a validação inicial test ter sido atendida
+```
+
+```javascript
+const opcional = /\d+\w?/
+
+opcional.test("12345") //true
+opcional.test("12345teste") //true
+opcional.test("teste") //retorna false devido a validação obrigatória de conter números não ter sido atendida
+opcional.test("12345 ") //retorna true devido a validação obrigatória de conter números ter sido atendida, então espaço em branco passa na validação opcional
+```
+
+`{}` - operador de precisão, serve para validarmos ocorrências precisas;
+```javascript
+const cep = /\d{5}-\d{3}/
+
+cep.test("teste") //false
+cep.test("010101-000") //true
+cep.test("010101000") //false
+cep.test("0101a1-000") //false
+cep.test("011-000") //false
+```
+
+```javascript
+const tel = /\(\d{2}\)\d{4,5}-\d{4}/
+
+tel.test("teste") //false
+tel.test("41999990000") //false
+tel.test("(41)99999-0000") //true
+tel.test("(41)999990000") //false
+tel.test("41 99999-0000") //false
+tel.test("(41)9a999-0000") //false
+```
+
+Essas validações não querem dizer que receberemos dados 100% veridicos, porém as informações inseridas pelo usuário irão entrar com a formatação e padrões corretos, o que pode diminuir a possibilidade de erros futuros.
+
+- **Métodos regex**:
+
+Os métodos podem nos retornar um objeto com algumas informações úteis sobre a regex.
+Caso nada seja encontrado o retorno será null.
+
+`.exec` - irá executar de forma parecida que o `.test` utilizado em todos os exemplos acima para testar a regex, porém nos dando um retorno de objeto.
+```javascript
+const digitos = /\d+/
+
+digitos.exec("Tem o número 18 aqui") 
+//["18", index: 13, input: "Tem o número 18 aqui", groups: undefined]
+	0: "18"
+	groups: undefined
+	index: 13
+	input: "Tem o número 18 aqui"
+	length: 1
+	__proto__: Array(0)
+
+digitos.exec("Não tem número aqui") //null
+```
+
+`.match` - irá retornar o mesmo padrão de informações que o .exec, porém sua aplicação é diretamente na string;
+```javascript
+const frase = "Tem o número 18 aqui".match(/\d+/)
+
+frase
+//["18", index: 13, input: "Tem o número 18 aqui", groups: undefined]
+	0: "18"
+	groups: undefined
+	index: 13
+	input: "Tem o número 18 aqui"
+	length: 1
+	__proto__: Array(0)
+
+const frase2 = "Tem o número aqui".match(/\d+/)
+
+frase2 //null
+```
+
+- **Choice Pattern**:
+
+O Choice Pattern nos permite colocar certas instruções na regex que funcionam como o **|| (OR / OU)** das condicionais.
+
+Exemplo:
+```javascript
+const nome = /\D+: (Marcos|Angie|Winky)/
+
+nome.test("Nome: 12") //false
+nome.test("Nome: Marcos") //true
+nome.test("Nome: Marcos12") //true
+nome.test("Nome: Kratos") //false
+nome.test("Marcos") //false
+```
+
+##### ALGUNS EXEMPLOS COM REGEX:
+
+Exemplo 1:
+```javascript
+const validaDominio = /[?www.]\w+\.com.br|.com/
+
+validaDominio.test("www.linkedin.com") //true
+validaDominio.test("www.linkedin.com.br") //true
+validaDominio.test("www.linkedin") //false
+validaDominio.test("linkedin.com.br") //true
+validaDominio.test("linkedin.com") //true
+```
+
+Exemplo 2:
+```javascript
+const validarEmail = /\w{5,20}@\w{3,15}\.\w{3,10}/
+
+validarEmail.test("marcaop@gmail.com.br") //true
+validarEmail.test("marcaop@gmail.com") //true
+validarEmail.test("aqueletestemaroto12345@gmail.com.com.com.com") //true
+validarEmail.test("aqueletestemaroto12345@1.com.com.com.com") //false
+```
+
+Exemplo 3:
+```javascript
+const validarData = /[0-31]{2}[/][0-12]{2}[/][1920-2021]{4}/
+
+validarData.test("01/99/9999") //false
+validarData.test("1/11/1999") //false
+validarData.test("01/11/1999") //true
+validarData.test("01/11/1800") //false
+validarData.test("01/11/2022") //true
+validarData.test("01/11/2023") //false
+validarData.test("01-03-1950") //false
+validarData.test("01031950") //false
+```
+
+> Estes exemplos não são a forma 100% correta, nota-se que em muitos casos a regex falha na validação, por isso é importante deixar o máximo travado possível, os exemplos são apenas para mostrar que com diversas combinações podemos realizar uma verificação bem detalhada de como o usuário estará enviando informações.
+
+> Para validações mais precisas, também podemos recorrer a APIs.
