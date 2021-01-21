@@ -15,6 +15,8 @@ Este repositório tem como objetivo disponibilizar um roteiro de estudo pessoal,
 - [**Repositório do Gabriel Darezzo**](https://github.com/gabrieldarezzo/helpjs-ravi "Repositório do Gabriel Darezzo"), contendo diversas dicas e exercícios práticos para iniciantes em JavaScript.
 - **[Repositório do Eric Douglas](https://github.com/ericdouglas/traduz-ai "Repositório do Eric Douglas")**, contendo uma coletação de artigos super ótimos e dicas valiosas sobre JavaScript, entre outros temas.
 - **[Repositório do Iuri Reis](https://github.com/iareis/links "Repositório do Iuri Reis")**, contendo uma listagem enorme de vários links super úteis que poderão auxiliar em diversas coisas.
+- **[Becode](https://becode.com.br "Becode")**, site ótimo com diversos artigos sobre várias tecnologias, ebooks gratuitos e quizzes para que possamos testar nossos conhecimentos.
+- **[Envato](https://themeforest.net/category/site-templates/personal?clickid=UjXSa01cexyLWdMwUx0Mo3IkUkER03xQNWD5T80&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=1348752&utm_campaign=af_impact_radius_1348752&utm_medium=affiliate&utm_source=impact_radius "Envato")**, site com diversos modelos de websites para buscarmos inspiração na hora de criar um design.
 
 ## TÓPICOS
 1. [Tipos de dados][1]
