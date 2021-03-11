@@ -71,7 +71,7 @@
 
 `! //operador NOT(NEGAÇÃO), retorna um boolean` - nos permite negar a condição boolean que seria retornada, conforme exemplos:
 
-*Irá sempre negar a condigação atual caso esteja declarado.*
+*Irá sempre negar a condição atual caso esteja declarado.*
 ```javascript
 !("teste" === 100) //true - ok string não é identica a number, temos o NOT;
 !(10 === 10) //false - ok a comparação seria true por se tratar de dois numbers, mas temos o NOT;
