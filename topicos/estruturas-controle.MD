@@ -56,7 +56,7 @@ if(nome === "Marcos"){
 
 - **Estrutura de controle else if(SENÃO/OUTRO(A)):**
 
-O else if serve para aplicar-mos condições mais complexas e detalhadas dentro de um if, nos permitindo aplicar diversos ifs dentro deste conjunto.
+O else if serve para aplicarmos condições mais complexas e detalhadas dentro de um if, nos permitindo aplicar diversos ifs dentro deste conjunto.
 
 `if(comparação) {código caso seja verdadeiro} else if (segunda ...n comparação) {código caso seja verdadeiro a segunda ...n condição} else {código caso seja falso}`
 
@@ -77,6 +77,7 @@ if(idade >= 15 && altura >= 1.65){
 
 A ideia desses códigos é executar loops que fiquem repetindo um bloco de código diversas vezes até que o mesmo chegue a uma certa condição final.
 Isso evita que fiquem criando diversos blocos de códigos separados para realizar esse loop de repetição.
+
 *Sempre devemos definir uma condição final para que o loop acabe, ou teremos um loop infinito, podemos atrapalhar a usabilidade da aplicação.*
 
 `while(condição){código caso seja verdadeiro que seja repetido até finalizar.}`
@@ -94,7 +95,7 @@ while(x > 0){
 let y = 0;
 while(y <= 10){
 	y = y + 1;
-	console.log("O valor de y é " + x); //irá imprimir no console o valor de cada y após cada execução.
+	console.log("O valor de y é " + y); //irá imprimir no console o valor de cada y após cada execução.
 }
 ```
 
