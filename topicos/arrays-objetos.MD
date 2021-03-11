@@ -106,7 +106,7 @@ nomes //se analisarmos o array irá conter (3) ["Marcos", "Angie", "Winky"]
 let nums = [1,3,4,7,8,3]
 
 nums.indexOf(3) //irá retornar o índice do valor 3 no array que é = 1
-nums.lastIndexOf(3) //irá retornar o ínidce do valor 3 no array que é 5, caso só tenha um elemento, irá encontrar o único índice.
+nums.lastIndexOf(3) //irá retornar o índice do valor 3 no array que é 5, caso só tenha um elemento, irá encontrar o único índice.
 ```
 
 `variável.slice()` - irá retornar um array de outro array, para isso definimos os parâmetros de inicio e fim para o slice retornar o novo array;
@@ -116,7 +116,7 @@ let array = [2,"Teste", "PS4", 18, "Final"]
 
 array.slice(2) //irá retornar um array a partir do índice 2 ["PS4", 18, "Final"]
 array.slice(2,4) //irá retornar um array a partir do índice 2 e antes do índice 4 ["PS4", 18]
-array.slice(2,3) //irá retornar um array a partir do índice 2 e antes do índice  3 ["PS4"]
+array.slice(2,3) //irá retornar um array a partir do índice 2 e antes do índice 3 ["PS4"]
 array.slice(-2) //irá retornar um array considerando o inicio do final [18, "Final"]
 array.slice(0,-2) //irá retornar um array a partir do índice 0 e antes dos dois últimos índices [2, "Teste", "PS4"]
 ```
@@ -143,8 +143,8 @@ nomes.forEach(nome =>{
 ```javascript
 let carros = ["Fiat", "BMW", "Chevy", "Ferrari"]
 
-carros.includes("Chevy") //caso o elemento analisado esteja no array irá retorna true
-carros.includes("Ford") //caso o elemento analisado não esteja no array irá retorna false
+carros.includes("Chevy") //caso o elemento analisado esteja no array irá retornar true
+carros.includes("Ford") //caso o elemento analisado não esteja no array irá retornar false
 ```
 
 `variável.reverse()` - irá reverter qualquer array, nos trazendo um novo array ao contrário;
@@ -175,7 +175,7 @@ Mais métodos de arrays e exemplos de como aplica-los podem ser encontrando em: 
 
 #### Métodos em Strings
 
-Assim como nos arrays, as String possuem métodos e propriedades também.
+Assim como nos arrays, as Strings possuem métodos e propriedades também.
 Sua forma de ser chamada é a mesma que em um array, porém temos alguns métodos diferentes e até mesmo alguns iguais que na prática executam a mesma função.
 
 Alguns métodos de string que tive mais contato:
@@ -187,7 +187,7 @@ let nome = "     Marcos  "
 nome //"     Marcos  "
 let nomeAjustado = nome.trim()
 
-nomeAjustado //irá remover os espaços e quebras de linhas, deixando a string padrão"Marcos"
+nomeAjustado //irá remover os espaços e quebras de linhas, deixando a string padrão "Marcos"
 ```
 
 > Podemos evitar isso com expressões regulares também, deixando padronizado já antes do usuário ter a possibilidade de inserir de forma incorreta.
@@ -224,12 +224,12 @@ arr.join(" - ") //irá pegar um array e o transformará em string, de acordo com
 
 `string.repeat()` - irá repetir a string de acordo com a quantidade de vezes definida;
 ```javascript
-let repertir = "Vou me repetir "
+let repetir = "Vou me repetir "
 
 repetir.repeat(3) //irá repetir conforme a qtd declarada "Vou me repetirVou me repetirVou me repetir"
 ```
 
-`string.concat()` - irá concatenar duas ou mais string, tornando uma nova string;
+`string.concat()` - irá concatenar duas ou mais strings, tornando uma nova string;
 ```javascript
 let texto = "Amigo estou "
 
@@ -243,7 +243,7 @@ texto.concat(texto2) //irá concatenar uma string em outra definida, basicamente
 let textaoAleatorio = "Este texto @ é aleatório, apenas para @ teste do método"
 
 textaoAleatorio.includes("@") //true
-//irá retornar um boolen caso o valor esteja incluído na string 
+//irá retornar um boolean caso o valor esteja incluído na string 
 ```
 
 `string.replace()` - irá checar uma string por um valor e substitui aquele valor por um novo na string;
@@ -336,7 +336,7 @@ console.log(personagem.poder); //irá imprimir o valor da propriedade poder.
 delete personagem.poder; //irá deletar a propriedade poder.
 console.log(personagem.poder); //irá imprimir undefined, devido a propriedade ter sido deletada.
 
-personagem.idade = "Desconhecida"; //para adicionar colocar o objeto.nome da propriedade = valor
+personagem.idade = "Desconhecida"; //para adicionar, colocar o objeto.nome da propriedade = valor
 console.log(personagem.idade); //irá imprimir o valor da nova propriedade idade que foi adicionada.
 ```
 
