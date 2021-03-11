@@ -5,7 +5,7 @@
 
 `"1234"` - Se números estiverem dentro de aspas, serão declarados como String.
 
-`Hello World`  - Template Literals , é uma forma de concatenas strings e variáveis de forma linear, sem ter o uso do +.
+`Hello World`  - Template Literals , é uma forma de concatenar strings e variáveis de forma linear, sem ter o uso do +.
 
 Exemplo concatenando com template literals e com operador +.
 ```javascript
@@ -45,7 +45,7 @@ Segunda linha
 
 `-Infinty` - Será abordado melhor abaixo.
 
-- Boolean **(true/false)**, são valores utilizados para realizar comparações, operações de comprações será abordado mais abaixo.
+- Boolean **(true/false)**, são valores utilizados para realizar comparações, operações de comparações serão abordadas melhor em outro tópico.
 
 `typeof true // boolean;`
 
