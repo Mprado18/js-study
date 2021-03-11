@@ -1,6 +1,6 @@
 ## ESTRUTURAS DE PROGRAMAÇÃO
 - **Variáveis:**
-Variáveis são os meios usamos de salvar valores e podermos usa-las e funções, expressões e etc.
+Variáveis são os meios que usamos para salvar valores e posteriormente podermos usa-las em funções, expressões e etc.
 
 `let` - veio para substituir o var, exemplos:
 
@@ -14,7 +14,7 @@ Algumas possibilidades de concatenação utilizando valores armazenados em vari�
 `Olá meu nome é ${nome}` //Olá meu nome é Marcos, forma de concatenar via template literals
 "A loja possui " + laranjas + " laranjas" //A loja possui 5 laranjas, forma de concatenar com sinal de +
 ```
-`const` - Forma de declarar constante, será uma variávle que não permitirá alteração durante o código, exmeplo armazenar um IP fixo que não deverá ter alteração.
+`const` - Forma de declarar constante, será uma variável que não permitirá alteração durante o código, exmeplo armazenar um IP fixo que não deverá ter alteração.
 `const ip = "127.0.0.1"`
 
 *A partir do JavaScript ES6 as variáveis começaram a poder ser declaradas com **let** ou **const**, porém é possível o uso do **var** ainda ou encontrar códigos mais antigos com esse tipo de declaração*
